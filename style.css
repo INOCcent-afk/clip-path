@@ -1,0 +1,50 @@
+body {
+  background: #dcf5ff;
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+}
+
+.inner {
+  background: rgb(9, 201, 153);
+  padding: 1em;
+  border-radius: 10px;
+  width: 250px;
+  clip-path: circle(10% at 90% 20%);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.inner:hover {
+  clip-path: circle(75%);
+  background: #00b6ff;
+}
+h1 {
+  color: white;
+  margin: 0;
+}
+p {
+  color: white;
+  font-size: 0.8em;
+}
+
+span {
+  float: right;
+  color: white;
+  font-weight: bold;
+  transition: color 0.5s;
+  position: relative;
+  margin-right: 4%;
+}
+.inner:hover span {
+  color: rgba(255, 255, 255, 0);
+}
+.preload-transitions {
+  -webkit-transition: null-transition;
+  -moz-transition: null-transition;
+  -ms-transition: null-transition;
+  -o-transition: null-transition;
+  transition: null-transition;
+}
